@@ -1,9 +1,3 @@
-game.StarterGui:SetCore("SendNotification", {
-          Icon = "rbxassetid://10063029995";
-          Title = "POWER X HUB", 
-          Text = "Whilelist"
-      })
-
 local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
 
 local PhantomForcesWindow = Library:NewWindow("POWER X HUB V1")
@@ -453,14 +447,6 @@ KillingCheats:CreateButton("Infinite ammo", function()
         game:GetService("Players").LocalPlayer.PlayerGui.GUI.Client.Variables.ammocount2.Value = 999
     end
 end)
-local KillingCheats = PhantomForcesWindow:NewSection("Player")
-KillingCheats:CreateDropdown("Speed", {"15", "30", "50", "70", "100"}, 2, function(speed)
-while true do
-wait()
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = speed
-end
-end)
-
 local KillingCheats = PhantomForcesWindow:NewSection("Player")
 KillingCheats:CreateDropdown("Speed", {"15", "30", "50", "70", "100"}, 2, function(speed)
 while true do
